@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One page Website Design</title>
+    <style>
+        .navbar {
+            background-color: rgb(120 31 0);
+            border-radius: 15px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 30px 20px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        .navbar li a:hover {
+            color: lightsalmon;
+            text-transform: uppercase;
+            transition: 0.80s;
+            text-decoration: underline;
+            font-size: 15px;
+        }
+
+        .search {
+            float: right;
+            color: antiquewhite;
+            padding: 30px 30px;
+        }
+
+        .navbar input {
+            border: 2px black solid;
+            border-radius: 10px;
+            padding: 3px 12px;
+            width: 100px;
+        }
+
+        #container {
+            background-color: #efd6b4;
+            color: rgb(120 31 0);
+            text-align: left;
+        }
+
+        .item {
+            float: left;
+            width: 25%;
+            margin: auto;
+        }
+
+        .item p em {
+            font-weight: bold;
+        }
+
+        .item strong {
+            color: #bb840a;
+        }
+
+        .item strong:hover {
+            background-color: rgb(120 31 0);
+            color: antiquewhite;
+        }
+
+        .item p {
+            width: 200px;
+            line-height: 30px;
+        }
+
+        .item ol {
+            padding-left: 3%;
+            line-height: 30px;
+        }
+
+        .item form {
+            margin-top: 14px;
+            width: 200px;
+            margin-left: 40px;
+            line-height: 33px;
+        }
+
+        .item span {
+            color: #bb840a;
+            font-weight: bold;
+            margin-left: 39px;
+        }
+
+        .item span:hover {
+            background-color: rgb(120 31 0);
+            color: antiquewhite;
+        }
+
+        .send {
+            background-color: rgb(120 31 0);
+            color: antiquewhite;
+            border: 2px #bb840a solid;
+            border-radius: 5px;
+            padding: 3px 40px;
+        }
+
+        .send:hover {
+            background-color: antiquewhite;
+            color: rgb(120 31 0);
+            border: 3px darkred solid;
+            cursor: pointer;
+        }
+
+        .next {
+            margin: 50px 230px;
+            width: 120px;
+            height: 30px;
+            border: 3px #bb840a solid;
+            border-radius: 5px;
+            background-color: rgb(120 31 0);
+        }
+
+        .next a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+
+        .next:hover {
+            background-color: #bb840a;
+            border: 3px rgb(120 31 0) solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Biography</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Get in touch</a></li>
+                <div class="search">
+                    <input type="text" name="text" placeholder="Search here!">
+
+                </div>
+            </ul>
+        </div>
+    </header>
+    <div id="container">
+        <div class="item">
+            <strong>Biography:</strong>
+            <p>
+                I am Usman Ali. I have done my bachelors in <em>Information Technology</em> from
+                <em>
+                    MNS-Universty of Agricultue Multan</em> and passed my intermediate in <em>Computer
+                    Science</em> from <em> Britain International College Network</em>. Currently I
+                am
+                l earning
+                Web Development at <em>Code with Harry</em>.
+            </p>
+        </div>
+        <div class="item">
+            <strong>Skills:</strong>
+            <p>
+                I have deep concepts about <em>HTML & CSS</em>. I also have some good practice of&nbsp;
+                <em>WordPress</em>
+                Making attractive <em>Front-end Website Design</em> is my passion. I always tried my best to
+                give my
+                100% on my projects.
+            </p>
+        </div>
+        <div class="item">
+            <strong>Services:</strong>
+            <ol type="i">
+                <li>Copy Clone any Website</li>
+                <li>WordPress Website Design</li>
+                <li>Front-end Web Design using HTML & CSS</li>
+            </ol>
+        </div>
+        <div class="item">
+            <span>Get in Touch:</span>
+            <form>
+                <label>Name:</label>
+                <input type="text" name="text" maxlength="30"><br>
+                <label>Write your message:</label><br>
+                <textarea name="query" cols="30" rows="3"></textarea><br>
+                <label>Email:</label>
+                <input type="email" name="email" required=""><br><br>
+                <button class="send">Send</button>
+            </form>
+        </div>
+    </div>
+    <button class="next"><a href="http://127.0.0.1:5500/previous%20projects2.html">Next</a></button>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #C55353;
+            /*background-image: url('img1.jpg');*/
+            /*background-size: cover;*/
+            color: #f9cdf6;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 22px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 60px;
+            height: 50px;
+        }
+
+        .logo {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+
+        .logo:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .center {
+            position: absolute;
+            left: 300px;
+            width: 700px;
+            top: 22px;
+            text-align: center;
+        }
+
+        .center li {
+            display: inline-block;
+            padding: 10px 26px;
+            font-size: 25px;
+
+        }
+
+        .center li a {
+            color: #f9cdf6;
+            text-decoration: none;
+        }
+
+        .center li a:hover,
+        .center li a.active {
+            text-decoration: underline;
+            font-size: 30px;
+            color: rgb(11, 11, 0);
+            font-family: fantasy;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 50px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: whitesmoke;
+            cursor: pointer;
+            padding: 5px 20px;
+            border-radius: 10px;
+            border: 2px #f9cdf6 solid;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: #C55353;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left"><img src="img2.jpg">
+            <div class="logo">Personal Portfolio</div>
+        </div>
+        <div class="center">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Biography.html">Bio</a></li>
+                <li><a href="http://127.0.0.1:5500/skills.html">Skills</a></li>
+                <li><a href="http://127.0.0.1:5500/previous%20projects1.html">Previous Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/hire%20me.html">Hire me</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"><a href="http://127.0.0.1:5500/call%20me%20now.html">Get Help!</a></button>
+        </div>
+    </header>
+
+</body>
+
+</html>

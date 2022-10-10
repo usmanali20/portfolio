@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment Form Design</title>
+    <style>
+        .main {
+            background-color: peru;
+            color: maroon;
+            border: 5px maroon solid;
+            height: auto;
+        }
+
+        .forall {
+            background-color: burlywood;
+            margin-top: 2px;
+            box-sizing: border-box;
+            border: 1px maroon solid;
+        }
+
+        textarea {
+            padding-left: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .next {
+            background-color: burlywood;
+            border: 3px maroon solid;
+            border-radius: 5px;
+            margin-left: 450px;
+            height: 30px;
+            width: 130px;
+            cursor: pointer;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .next a {
+            text-decoration: none;
+            color: black;
+        }
+        .next:hover{
+            border: 3px burlywood solid;
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php" class="main">
+        <fieldset style="border: 2px burlywood solid; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;">
+            <legend style="text-align: center; font-size: x-large; border: 2px maroon dotted;">
+                <strong><em>Submition Form for Course Enrollment</em></strong>
+            </legend>
+            <label><strong>Name:</strong></label><br>
+            <input type="text" name="Name" placeholder="Enter Your Name Here!" maxlength="20" autofocus="" required=""
+                class="forall" style="padding-left: 5px;"><br><br>
+
+            <label><strong>Profile:</strong></label><br>
+            <textarea name="Profile" cols="60" rows="10" placeholder="Write about Yourself!"
+                class="forall"></textarea><br><br>
+
+            <label><strong>Age:</strong></label><br>
+            <input type="number" name="Age" max="25" class="forall"><br><br>
+
+
+            <label><strong>Gender:</strong></label><br>
+            <input type="radio" name="Gender" checked="">Male:
+            <input type="radio" name="Gender">Female:
+            <input type="radio" name="Gender">Rather not say:<br><br>
+
+            <label><strong>Email:</strong></label><br>
+            <input type="email" name="Email" class="forall"><br><br>
+
+            <label><strong>Available Courses:</strong></label><br>
+            <select name="AvailableCourses" class="forall">
+                <option>Select your desire course!</option>
+                <optgroup label="Front-end"></optgroup>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="bootstrap">BootStrap</option>
+                <optgroup label="Back-end"></optgroup>
+                <option value="python">python</option>
+                <option value="php">PHP</option>
+                <option value="ajax">Ajax</option>
+                <option value="laravel">Laravel</option>
+            </select><br><br>
+            
+            
+
+                <label><strong>Date:</strong></label><br>
+            <input type="date" name="Date" class="forall">
+            <button class="next"><a href="http://127.0.0.1:5500/previous%20projects3.html">Next</a></button>
+            <br><br>
+
+            <input type="submit" value="Submit Form" class="forall">
+            <input type="reset" value="Reset Form" class="forall">
+        </fieldset>
+    </form>
+</body>
+
+</html>

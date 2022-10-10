@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation Design</title>
+        <!--<link rel="stylesheet" href="style Animation.css" type="text/css">!-->
+        <style>
+            *{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.box1{
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(202, 6, 72, 0.5);
+    position: absolute;
+    top: 50px;
+    left: -5px;
+    animation: box1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    color: lawngreen;
+    text-align: center;
+    padding-top: 30px;
+}
+.box2{
+    width: 100px;
+    height: 70px;
+    background-color: darkblue;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.5;
+    border-radius: 20%;
+    animation: box2;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 2;
+    color: lavender;
+    text-align: center;
+    padding-top: 30px;
+}
+.box3{
+    width: 100px;
+    height: 70px;
+    background-color: forestgreen;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    opacity: 1;
+    animation: box3;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    color: bisque;
+    text-align: center;
+    padding-top: 30px;
+}
+.box4{
+    width: 100px;
+    height: 70px;
+    background-color: gold;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    opacity: 0.60;
+    border-radius: 35%;
+    animation: box4;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    color: brown;
+    text-align: center;
+    padding-top: 30px;
+}
+@keyframes box2{
+    from{
+        top: 10px;
+        left: 10px;
+    }
+    to{
+        top: 10px;
+        left: 110%;
+    }
+    }
+    @keyframes box3{
+        from{
+            top: 40px;
+            left: 500px;
+        }
+        to{
+            top: 40px;
+            left: 110%;
+        }
+        }
+        @keyframes box4{
+            from{
+                top: 70px;
+                right: 100px;
+            }
+            to{
+                top: 70px;
+                right: 110%;
+            }
+            }
+            @keyframes box1{
+                from{
+                    top: 50px;
+                    left: -5px;
+                    background-color: rgba(240, 180, 200, 0.5);
+                }
+                to{
+                    top: 30px;
+                    left: 110%;
+                    background-color: rgba(240, 180, 200, 1);
+                }
+                }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="box1">Welcome </div>
+            <div class="box2" width="100%" height="100%">to</div>
+            <div class="box3" width="100%" height="100%">My Personal</div>
+            <div class="box4" width="100%" height="100%">Portfolio</div>
+        </div>
+    </body>
+</html>
